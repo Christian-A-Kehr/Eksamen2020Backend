@@ -6,6 +6,7 @@
 package dtos;
 
 import entities.Ingredient;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -17,18 +18,18 @@ public class RecipeDTO
     private long id; 
     private String name;
     private int preperation_time;
-    private List<String> dierections; 
+    private List<String> directions; 
     private String category;
-    private List<Ingredient> ingredients;
+    private List<Ingredient> ingredient_list;
 
     public RecipeDTO(long id, String name, int preperation_time, List<String> dierections, String category, List<Ingredient> ingredients)
     {
         this.id = id;
         this.name = name;
         this.preperation_time = preperation_time;
-        this.dierections = dierections;
+        this.directions = dierections;
         this.category = category;
-        this.ingredients = ingredients;
+        this.ingredient_list = ingredients;
     }
 
     public long getId()
@@ -61,14 +62,14 @@ public class RecipeDTO
         this.preperation_time = preperation_time;
     }
 
-    public List<String> getDierections()
+    public List<String> getDirections()
     {
-        return dierections;
+        return directions;
     }
 
-    public void setDierections(List<String> dierections)
+    public void setDirections(List<String> directions)
     {
-        this.dierections = dierections;
+        this.directions = directions;
     }
 
     public String getCategory()
@@ -81,20 +82,20 @@ public class RecipeDTO
         this.category = category;
     }
 
-    public List<Ingredient> getIngredients()
+    public List<Ingredient> getIngredient_list()
     {
-        return ingredients;
+        return ingredient_list;
     }
 
-    public void setIngredients(List<Ingredient> ingredients)
+    public void setIngredient_list(List<Ingredient> ingredient_list)
     {
-        this.ingredients = ingredients;
+        this.ingredient_list = ingredient_list;
     }
 
     @Override
     public String toString()
     {
-        return "RecipeDTO{" + "id=" + id + ", name=" + name + ", preperation_time=" + preperation_time + ", dierections=" + dierections + ", category=" + category + ", ingredients=" + ingredients + '}';
+        return "RecipeDTO{" + "id=" + id + ", name=" + name + ", preperation_time=" + preperation_time + ", dierections=" + directions + ", category=" + category + ", ingredients=" + ingredient_list + '}';
     }
 
 }

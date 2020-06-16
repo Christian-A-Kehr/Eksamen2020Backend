@@ -26,7 +26,6 @@ public class ApplicationConfig extends Application {
         resources.add(errorhandling.GenericExceptionMapper.class);
         resources.add(org.glassfish.jersey.server.wadl.internal.WadlResource.class);
         resources.add(rest.DemoResource.class);
-        resources.add(rest.JokeResource.class);
         resources.add(rest.RecipeResource.class);
         resources.add(rest.RegistrationResource.class);
         resources.add(rest.RenameMeResource_deprecated.class);
