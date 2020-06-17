@@ -3,6 +3,11 @@
   <!-- DO NOT RENAME THE PERSISTENCE UNIT -->
   <persistence-unit name="pu" transaction-type="RESOURCE_LOCAL">
     <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>entities.DayPlaner</class>
+    <class>entities.Recipe</class>
+    <class>entities.Ingredient</class>
+    <class>entities.MenuPlan</class>
+    <class>entities.Menuplan</class>
     <class>entities.RenameMe</class>
     <exclude-unlisted-classes>false</exclude-unlisted-classes>
     <properties>

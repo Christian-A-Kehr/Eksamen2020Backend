@@ -15,7 +15,7 @@ import javax.validation.constraints.Size;
 
 /**
  *
- * @author Plaul
+ * @author Christian
  */
 @Entity
 @NamedQuery(name = "Role.deleteAllRows", query = "DELETE from Role")

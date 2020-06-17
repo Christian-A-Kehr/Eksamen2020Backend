@@ -79,6 +79,8 @@ public class RecipeResource
     @Produces({MediaType.APPLICATION_JSON})
     public String getAllRecipes() {
         
+        // alternativ Solution loop getRecipeById => add to list of recipes, then return list for frontEnd
+       
         Gson gson = new Gson();
         try
         {
